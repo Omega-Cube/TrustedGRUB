@@ -90,11 +90,11 @@ PCRs measurements:
 SCRTM vs DCRTM note:
 
 TrustedGRUB implements support for a Static Core Root of Trust Measurement (SCRTM).
-This technique is obsoleted by the more recent Dynamic Core Root of Trust Measurement (DCRTM), implemented by the
-tboot project (http://sourceforge.net/projects/tboot/), supported by Intel.
-But SCRTM and DCRTM are not incompatible with each other. You can use both at the same time. TrustedGRUB can execute
-first, writing the measurements into the lower, static PCRs, and then pass control to tboot, which will write it's
-measurements into the upper, dynamic PCRs.
+This technique is obsoleted by the more recent Dynamic Core Root of Trust Measurement (DCRTM),
+implemented by the tboot project (http://sourceforge.net/projects/tboot/), supported by Intel.
+But SCRTM and DCRTM are not incompatible with each other. You can use both at the same time.
+TrustedGRUB can execute first, writing the measurements into the lower, static PCRs, and then pass
+control to tboot, which will write it's measurements into the upper, dynamic PCRs.
 
 Changes:
 
